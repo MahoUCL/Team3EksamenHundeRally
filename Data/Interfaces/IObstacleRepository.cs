@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HundeRally.Domain
+namespace HundeRally.Domain.Interfaces
 {
     public interface IObstacleRepository
     {

@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using HundeRally.Domain.Interfaces;
+using HundeRally.Infrastructure.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +13,10 @@ namespace HundeRally.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
-            return services;
+            services.AddScoped<IObstacleRepository, ObstacleRepository>();
+            return services;    
         }
+
+        
     }
 }

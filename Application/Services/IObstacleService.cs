@@ -10,5 +10,6 @@ namespace HundeRally.Application.Services
     public interface IObstacleService
     {
         Task<IEnumerable<Obstacle>> GetAllObstaclesAsync();
+        //Resterende CRUD operationer herunder
     }
 }
