@@ -1,3 +1,8 @@
+using HundeRally.Application;
+using HundeRally.Application.Services;
+using HundeRally.Domain;
+using HundeRally.Infrastructure;
+using HundeRally.Infrastructure.Repositories;
 using WebUI.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+// ClassLibraries
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure();
+
+builder.Services.AddScoped<IObstacleService, ObstacleService>();
+builder.Services.AddScoped<IObstacleRepository, ObstacleRepository>();
 
 
 var app = builder.Build();
@@ -26,3 +37,4 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
 app.Run();
+
