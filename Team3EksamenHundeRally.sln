@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{87F8F712-E9F7-406F-94C0-4597BA5C0663}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HundeRally.WebUI.Server", "WebUI\HundeRally.WebUI.Server.csproj", "{87F8F712-E9F7-406F-94C0-4597BA5C0663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{E91BD405-08A2-4F64-B565-89734D510D3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HundeRally.WebAPI", "WebAPI\HundeRally.WebAPI.csproj", "{E91BD405-08A2-4F64-B565-89734D510D3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HundeRally.Domain", "Data\HundeRally.Domain.csproj", "{1778808F-EE1A-49B5-A592-E868ED1F3669}"
 EndProject

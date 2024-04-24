@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebAPI\WebAPI.csproj" />
+    <ProjectReference Include="..\WebAPI\HundeRally.WebAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
